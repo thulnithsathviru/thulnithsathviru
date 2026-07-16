@@ -1,10 +1,10 @@
 <!--
 =====================================================================
   GITHUB PROFILE README  —  Thulnith Sathviru (@thulnithsathviru)
-  This is filled in and ready to use. To tweak later:
+  To tweak later:
    • Tech stack: edit the skillicons "i=" list and the badge rows.
-   • Featured Projects: replace <<repo-name>> with your real repos.
-   • Snake image stays commented until you add snake.yml (see that file).
+   • Featured Projects: the repo= value in each <img src> must match a
+     PUBLIC repo name exactly (case-sensitive) — that's what renders.
 =====================================================================
 -->
 
@@ -107,12 +107,12 @@ Undergraduate in **Urban Informatics & Planning** at the University of Moratuwa,
 
 <div align="center">
 
-<!-- Replace <<repo-name>> with your real repository names, or delete a block. -->
+<!-- The repo= value in BOTH the href and the img src must match a public repo name exactly. -->
 <a href="https://github.com/thulnithsathviru/Elephant-Guard">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=thulnithsathviru&repo=REPLACE-WITH-REPO&theme=react&hide_border=true&bg_color=0d1117&title_color=509353&icon_color=509353" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=thulnithsathviru&repo=Elephant-Guard&theme=react&hide_border=true&bg_color=0d1117&title_color=509353&icon_color=509353" />
 </a>
 <a href="https://github.com/thulnithsathviru/Modelling-the-Cost-of-Sprawl">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=thulnithsathviru&repo=REPLACE-WITH-REPO-2&theme=react&hide_border=true&bg_color=0d1117&title_color=509353&icon_color=509353" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=thulnithsathviru&repo=Modelling-the-Cost-of-Sprawl&theme=react&hide_border=true&bg_color=0d1117&title_color=509353&icon_color=509353" />
 </a>
 
 </div>
@@ -126,8 +126,12 @@ Undergraduate in **Urban Informatics & Planning** at the University of Moratuwa,
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=thulnithsathviru&theme=react-dark&bg_color=0d1117&color=509353&line=509353&point=ffffff&hide_border=true" />
 
-<!-- Contribution snake -->
-<img src="https://raw.githubusercontent.com/thulnithsathviru/thulnithsathviru/output/github-snake-dark.svg" />
+<!-- Contribution snake — adapts to the viewer's light/dark theme -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thulnithsathviru/thulnithsathviru/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thulnithsathviru/thulnithsathviru/output/github-snake.svg" />
+  <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/thulnithsathviru/thulnithsathviru/output/github-snake-dark.svg" />
+</picture>
 
 </div>
 
