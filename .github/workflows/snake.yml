@@ -2,12 +2,8 @@
 #  CONTRIBUTION SNAKE ANIMATION
 #  WHERE THIS GOES: in your thulnithsathviru/thulnithsathviru repo, at
 #      .github/workflows/snake.yml
-#  It runs every 12 hours, "eats" your contribution squares, and saves
-#  an SVG to a branch called "output". Then reference it in README.md:
-#      https://raw.githubusercontent.com/thulnithsathviru/thulnithsathviru/output/github-snake-dark.svg
-#
-#  AFTER ADDING IT: go to the repo's Actions tab and run it once
-#  manually (the "Run workflow" button) so the image exists.
+#  Generates a light AND a dark snake so it stays visible in both
+#  GitHub themes. Runs every 12 hours; run once manually after editing.
 # =====================================================================
 name: Generate Snake Animation
 
@@ -19,7 +15,7 @@ on:
     branches:
       - main
 
-# This block is what fixes exit code 128 — it lets the job push the image.
+# Lets the job push the generated images to the "output" branch.
 permissions:
   contents: write
 
@@ -32,9 +28,11 @@ jobs:
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # color_dots goes empty -> lightest -> darkest fill.
+          # Empty squares are a visible grey so the grid reads on dark bg.
           outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=509353
+            dist/github-snake.svg?color_snake=509353&color_dots=#ebedf0,#9be9a8,#40c463,#30a14e,#216e39
+            dist/github-snake-dark.svg?color_snake=39d353&color_dots=#484f58,#0e4429,#006d32,#26a641,#39d353
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4.0.0
