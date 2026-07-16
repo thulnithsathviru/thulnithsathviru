@@ -126,10 +126,8 @@ Undergraduate in **Urban Informatics & Planning** at the University of Moratuwa,
 
 <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=thulnithsathviru&theme=react-dark&bg_color=0d1117&color=509353&line=509353&point=ffffff&hide_border=true" />
 
-<!-- Contribution snake — uncomment AFTER you add snake.yml and run it once. -->
-<!--
+<!-- Contribution snake -->
 <img src="https://raw.githubusercontent.com/thulnithsathviru/thulnithsathviru/output/github-snake-dark.svg" />
--->
 
 </div>
 
