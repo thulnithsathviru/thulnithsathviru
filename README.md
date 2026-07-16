@@ -108,10 +108,10 @@ Undergraduate in **Urban Informatics & Planning** at the University of Moratuwa,
 <div align="center">
 
 <!-- Replace <<repo-name>> with your real repository names, or delete a block. -->
-<a href="https://github.com/thulnithsathviru/REPLACE-WITH-REPO">
+<a href="https://github.com/thulnithsathviru/Elephant-Guard">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=thulnithsathviru&repo=REPLACE-WITH-REPO&theme=react&hide_border=true&bg_color=0d1117&title_color=509353&icon_color=509353" />
 </a>
-<a href="https://github.com/thulnithsathviru/REPLACE-WITH-REPO-2">
+<a href="https://github.com/thulnithsathviru/Modelling-the-Cost-of-Sprawl">
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=thulnithsathviru&repo=REPLACE-WITH-REPO-2&theme=react&hide_border=true&bg_color=0d1117&title_color=509353&icon_color=509353" />
 </a>
 
